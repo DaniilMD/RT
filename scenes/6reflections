@@ -1,0 +1,102 @@
+camera:
+{
+    viewpoint: (-30, -10, -100)
+    camera_angles: (0, 0, 0)
+}
+// Opened box
+object:
+{
+    type: plane
+    center: (-50.0, 0.0, 0.0)
+    direction: (1., 0., 0.)
+    color:  (2, 2, 2)
+    specular: 0
+    reflective: 0.2
+    transparent: 0
+}
+object:
+{
+    type: plane
+    center: (50.0, 0.0, 0.0)
+    direction: (-1., 0., 0.)
+    color:  (42, 42, 42)
+    specular: 0
+    reflective: 0.
+    transparent: 0
+}
+object:
+{
+    type: plane
+    center: (0.0, -50.0, 0.0)
+    direction: (0., 1., 0.)
+    color:  (42, 42, 42)
+    specular: 0
+    reflective: 0.
+    transparent: 0
+}
+object:
+{
+    type: plane
+    center: (0.0, 50.0, 0.0)
+    direction: (0., -1., 0.)
+    color:  (42, 42, 42)
+    specular: 0
+    reflective: 0
+    transparent: 0
+}
+object:
+{
+    type: plane
+    center: (0.0, 0.0, 50.0)
+    direction: (0., 0., -1.)
+    color:  (150, 150, 150)
+    specular: 0
+    reflective: 0.5
+    transparent: 0
+}
+// Red spheres
+object:
+{
+    type: sphere
+    center: (0, 30, 0.)
+    radius: 10.
+    color:  (255, 0, 0)
+    specular: -1
+    reflective: 0.5
+    transparent: 0.
+	negative: 0
+}
+
+object:
+{
+	type: cyl
+	center: (30., 0., 0.)
+	direction: (.0, 1.0, .0)
+	radius: 10.
+	color:  (0, 0, 200)
+	specular: 1000
+	reflective: 0.5
+	transparent: 0.
+	negative: 0
+}
+// 2 random point light sources and ambient light
+light:
+{
+    type: p
+    position: (0, 0, -100)
+    intensities: (0.5, 0.5, 0.5)
+}
+
+light:
+{
+    type: p
+    position: (10, 0, -15)
+    intensities: (0.5, 0.5, 0.5)
+}
+
+light/:
+{
+    type: p
+    position: (-10, 0, -35)
+    intensities: (0.5, 0.5, 0.5)
+}

@@ -1,0 +1,195 @@
+camera:
+{
+	viewpoint: (0, 0, -90)
+	camera_angles: (0, 0, 0)
+}
+// Shperes on top and below pillars
+object:
+{
+	type: sphere
+	center: (-30., -30., 0.)
+	radius: 10.
+	color:  (170, 170, 170)
+	specular: 200
+	reflective: 0.
+	transparent: 0.
+	negative: 0
+}
+object:
+{
+	type: sphere
+	center: (30., -30., 0.)
+	radius: 10.
+	color:  (170, 170, 170)
+	specular: 200
+	reflective: 0.
+	transparent: 0.
+	negative: 0
+}
+object:
+{
+	type: sphere
+	center: (-30., 30., 0.)
+	radius: 10.
+	color:  (170, 170, 170)
+	specular: 200
+	reflective: 0.
+	transparent: 0.
+	negative: 0
+}
+object:
+{
+	type: sphere
+	center: (30., 30., 0.)
+	radius: 10.
+	color:  (170, 170, 170)
+	specular: 200
+	reflective: 0.
+	transparent: 0.
+	negative: 0
+}
+object:
+{
+	type: sphere
+	center: (-30., -30., 70.)
+	radius: 10.
+	color:  (170, 170, 170)
+	specular: 200
+	reflective: 0.
+	transparent: 0.
+	negative: 0
+}
+object:
+{
+	type: sphere
+	center: (30., -30., 70.)
+	radius: 10.
+	color:  (170, 170, 170)
+	specular: 200
+	reflective: 0.
+	transparent: 0.
+	negative: 0
+}
+object:
+{
+	type: sphere
+	center: (-30., 30., 70.)
+	radius: 10.
+	color:  (170, 170, 170)
+	specular: 200
+	reflective: 0.
+	transparent: 0.
+	negative: 0
+}
+object:
+{
+	type: sphere
+	center: (30., 30., 70.)
+	radius: 10.
+	color:  (170, 170, 170)
+	specular: 200
+	reflective: 0.
+	transparent: 0.
+	negative: 0
+}
+// Red shpere in the center of the scene
+object:
+{
+	type: sphere
+	center: (0., -20., 20.)
+	radius: 6.
+	color:  (150, 0, 0)
+	specular: 50
+	reflective: 0.
+	transparent: 0.
+	negative: 0
+}
+// Walls behind and to the sides
+object:
+{
+	type: plane
+	center: (0.0, 0.0, 100.0)
+	direction: (0., 0., -1.)
+	color:  (0, 0, 100)
+	specular: 100
+	reflective: 0.
+	transparent: 0
+}
+object:
+{
+	type: plane
+	center: (0.0, 30.0, 0.0)
+	direction: (0., 1., 0.)
+	color:  (77, 77, 77)
+	specular: 100
+	reflective: 0.
+	transparent: 0
+}
+object:
+{
+	type: plane
+	center: (0.0, -30.0, 0.0)
+	direction: (0., -1., 0.)
+	color:  (77, 77, 77)
+	specular: 100
+	reflective: 0.
+	transparent: 0
+}
+// Pillars themselves
+object:
+{
+	type: cyl
+	center: (-30., 0., 0.)
+	radius: 7.
+	direction: (0.0, 1.0, 0.0)
+	color:  (170, 170, 170)
+	specular: 200
+	reflective: 0.
+	transparent: 0
+}
+object:
+{
+	type: cyl
+	center: (30., 0., 0.)
+	radius: 7.
+	direction: (0.0, 1.0, 0.0)
+	color:  (170, 170, 170)
+	specular: 200
+	reflective: 0.
+	transparent: 0
+}
+object:
+{
+	type: cyl
+	center: (-30., 0., 70.)
+	radius: 7.
+	direction: (0.0, 1.0, 0.0)
+	color:  (170, 170, 170)
+	specular: 200
+	reflective: 0.
+	transparent: 0
+}
+object:
+{
+	type: cyl
+	center: (30., 0., 70.)
+	radius: 7.
+	direction: (0.0, 1.0, 0.0)
+	color:  (170, 170, 170)
+	specular: 200
+	reflective: 0.
+	transparent: 0
+}
+// 2 light sources - to the left and right
+light:
+{
+	type: p
+	position: (130, 25, -150)
+	intensities: (0.7, 0.7, 0.7)
+}
+light:
+{
+	type: p
+	position: (-130, 25, -150)
+	intensities: (0.7, 0.7, 0.7)
+}

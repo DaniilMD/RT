@@ -1,0 +1,147 @@
+camera:
+{
+	viewpoint: (0, 0, -150)
+	camera_angles: (0, 0, 0)
+}
+// Opened box
+object:
+{
+	type: plane
+	center: (-90.0, 0.0, 0.0)
+	direction: (1., 0., 0.)
+	color:  (42, 42, 42)
+	specular: 300
+	reflective: 0.
+	transparent: 0.
+}
+object:
+{
+	type: plane
+	center: (90.0, 0.0, 0.0)
+	direction: (-1., 0., 0.)
+	color:  (42, 42, 42)
+	specular: 300
+	reflective: 0.
+	transparent: 0
+}
+object:
+{
+	type: plane
+	center: (0.0, -50.0, 0.0)
+	direction: (0., 1., 0.)
+	color:  (42, 42, 42)
+	specular: 300
+	reflective: 0.
+	transparent: 0
+}
+object:
+{
+	type: plane
+	center: (0.0, 50.0, 0.0)
+	direction: (0., -1., 0.)
+	color:  (42, 42, 42)
+	specular: 300
+	reflective: 0.
+	transparent: 0
+}
+object:
+{
+	type: plane
+	center: (0.0, 0.0, 50.0)
+	direction: (0., 0., -1.)
+	color:  (42, 42, 42)
+	specular: 300
+	reflective: 0.
+	transparent: 0
+}
+// Different figures with different indexes of refraction
+// left_side, ior = 1.2
+object:
+{
+	type: sphere
+	center: (-30., 0., 0.)
+	radius: 15.
+	color:  (255, 0, 0)
+	specular: 200
+	reflective: 0.
+	transparent: 0.5
+	index_of_refr: 1.3
+}
+object:
+{
+	type: cone
+	center: (-60., 0., 0.)
+	direction: (0.0, 1.0, 0.0)
+	alpha: 25
+	color:  (0, 0, 200)
+	specular: 200
+	reflective: 0.
+	transparent: 0.5
+	index_of_refr: 1.3
+}
+object:
+{
+	type: cyl
+	center: (-90., 0., 0.)
+	direction: (0.0, 1.0, 0.0)
+	radius: 15.
+	color:  (42, 42, 100)
+	specular: 200
+	reflective: 0.
+	transparent: 0.5
+	index_of_refr: 1.3
+}
+// right_side, ior = 1.7
+object:
+{
+	type: sphere
+	center: (30., 0., 0.)
+	radius: 15.
+	color:  (255, 0, 0)
+	specular: 200
+	reflective: 0.
+	transparent: 0.7
+	index_of_refr: 1.05
+}
+object:
+{
+	type: cone
+	center: (60., 0., 0.)
+	direction: (0.0, 1.0, 0.0)
+	alpha: 25
+	color:  (0, 0, 200)
+	specular: 200
+	reflective: 0.
+	transparent: 0.7
+	index_of_refr: 1.05
+}
+object:
+{
+	type: cyl
+	center: (90., 0., 0.)
+	direction: (0.0, 1.0, 0.0)
+	radius: 15.
+	color:  (42, 42, 100)
+	specular: 200
+	reflective: 0.
+	transparent: 0.7
+	index_of_refr: 1.05
+}
+// 2 random point light sources and ambient light
+light:
+{
+	type: p
+	position: (-45, 10, -30)
+	intensities: (0.4, 0.4, 0.4)
+}
+light:
+{
+	type: p
+	position: (40, 10, -30)
+	intensities: (0.4, 0.4, 0.4)
+}
+light:
+{
+	type: a
+	intensities: (0.4, 0.4, 0.4)
+}

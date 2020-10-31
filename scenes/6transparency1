@@ -1,0 +1,68 @@
+camera:
+{
+    viewpoint: (10, 20, -90)
+    camera_angles: (-0, -20, 0)
+}
+// Opened box
+object:
+{
+    type: plane
+    center: (-10.0, 0.0, 0.0)
+    direction: (0., 0., -1.)
+    color:  (0, 142, 142)
+    specular: 0
+    reflective: 0.
+    transparent: 0
+
+}
+
+object:
+{
+    type: plane
+    center: (0.0, 0.0, 0.0)
+    direction: (0., 1., 0.)
+    color:  (142, 142, 142)
+    specular: 0
+    reflective: 0.
+    transparent: 0
+}
+
+// Red spheres
+object:
+{
+    type: sphere
+    center: (0, 11, -70.)
+    radius: 4.
+    color:  (50, 50, 50)
+    specular: 100
+    reflective: 0.
+}
+
+object:
+{
+    type: sphere
+    center: (0, 11, -35.)
+    radius: 10.
+    color:  (100, 100, 100)
+    specular: -1
+    reflective: 0.
+    transparent: 1.
+	negative: 0
+    index_of_refr: 1.1
+}
+
+
+// 2 random point light sources and ambient light
+light:
+{
+    type: p
+    position: (-20, 10, -95)
+    intensities: (.5, .5, .5)
+}
+
+light:
+{
+    type: p
+    position: (0, 10, -95)
+    intensities: (.5, .5, .5)
+}

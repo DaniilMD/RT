@@ -1,0 +1,110 @@
+camera:
+{
+	viewpoint: (0, 5, -30)
+	camera_angles: (0, 0, 0)
+}
+
+object:
+{
+	type: plane
+	center: (0.0, 0.0, 5.0)
+	direction: (0., 0., 1.)
+	color:  (60, 60, 255)
+	specular: 0
+	reflective: 0.
+	transparent: 0
+}
+
+object:
+{
+    type: sphere
+    center: (-12., 0., -5)
+    radius: 2.5
+    color:  (245, 235, 184)
+    specular: -1
+    reflective: 0.
+    transparent: 0.0
+	negative: 0
+    tex_num: 9
+	tex_type: b
+    scale: (1, 1)
+	shift: (0, 0)
+}
+
+object:
+{
+    type: sphere
+    center: (-6., 0., -5)
+    radius: 2.5
+    color:  (0, 255, 0)
+    specular: -1
+    reflective: 0.
+    transparent: 0.0
+	negative: 0
+    tex_num: 1
+	tex_type: o
+    scale: (1, 1)
+	shift: (0, 0)
+}
+
+object:
+{
+    type: sphere
+    center: (0., 12., 5)
+    radius: 5
+    color:  (255, 20, 20)
+    specular: -1
+    reflective: 0.
+    transparent: 0.0
+	negative: 0
+    tex_num: 8
+	tex_type: o
+    scale: (1, 1)
+	shift: (0, -0.1)
+}
+
+object:
+{
+    type: sphere
+    center: (6., 0., -5)
+    radius: 2.5
+    color:  (255, 20, 20)
+    specular: -1
+    reflective: 0.
+    transparent: 0.0
+	negative: 0
+    tex_num: 5
+	tex_type: o
+    scale: (1, 1)
+	shift: (0, 0)
+}
+
+object:
+{
+    type: sphere
+    center: (-12., 8., -5)
+    radius: 3
+    color:  (255, 255, 255)
+    specular: -1
+    reflective: 0.
+    transparent: 0.0
+	negative: 0
+    tex_num: 7
+	tex_type: d
+    scale: (1, 1)
+	shift: (0, 0)
+}
+
+
+light:
+{
+	type: p
+	position: (-10, 0, -15)
+	intensities: (0.7, 0.7, 0.7)
+}
+
+light:
+{
+	type: a
+	intensities: (0.1, 0.1, 0.1)
+}

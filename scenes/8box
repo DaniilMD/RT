@@ -1,0 +1,132 @@
+camera:
+{
+	viewpoint: (-30, 5, -30)
+	camera_angles: (1, 41, -1)
+}
+
+object:
+{
+    type: plane
+    center: (0., 0., 0)
+	direction: (0.0, 0.0, 1.0)
+    color:  (0, 0, 255)
+    specular: 0
+    reflective: 0.
+    transparent: 0
+	slice: (0.0, 1.0, 0.0, 0)
+	slice_side: 1
+	slice: (1.0, 0.0, 0.0, 0)
+	slice_side: 1
+    slice: (0.0, 1.0, 0.0, 10)
+	slice_side: 2
+    slice: (1.0, 0.0, 0.0, 10)
+	slice_side: 2
+}
+
+object:
+{
+    type: plane
+    center: (0., 0., 10)
+	direction: (0.0, 0.0, 1.0)
+    color:  (0, 255, 0)
+    specular: 0
+    reflective: 0.
+    transparent: 0
+	slice: (0.0, 1.0, 0.0, 0)
+	slice_side: 1
+	slice: (1.0, 0.0, 0.0, 0)
+	slice_side: 1
+    slice: (0.0, 1.0, 0.0, 10)
+	slice_side: 2
+    slice: (1.0, 0.0, 0.0, 10)
+	slice_side: 2
+}
+
+object:
+{
+    type: plane
+    center: (0., 0., 0)
+	direction: (0.0, 1.0, 0.0)
+    color:  (255, 0, 0)
+    specular: 0
+    reflective: 0.
+    transparent: 0
+	slice: (0.0, 0.0, 1.0, -10)
+	slice_side: 1
+	slice: (1.0, 0.0, 0.0, 0)
+	slice_side: 1
+    slice: (0.0, 0.0, 1.0, 0)
+	slice_side: 2
+    slice: (1.0, 0.0, 0.0, 10)
+	slice_side: 2
+}
+
+object:
+{
+    type: plane
+    center: (0., -10., 0)
+	direction: (0.0, 1.0, 0.0)
+    color:  (255, 255, 0)
+    specular: 0
+    reflective: 0.
+    transparent: 0
+	slice: (0.0, 0.0, 1.0, -10)
+	slice_side: 1
+	slice: (1.0, 0.0, 0.0, 0)
+	slice_side: 1
+    slice: (0.0, 0.0, 1.0, 0)
+	slice_side: 2
+    slice: (1.0, 0.0, 0.0, 10)
+	slice_side: 2
+}
+
+object:
+{
+    type: plane
+    center: (0., 0., 0)
+	direction: (1.0, 0.0, 0.0)
+    color:  (255, 0, 255)
+    specular: 0
+    reflective: 0.
+    transparent: 0
+	slice: (0.0, 0.0, 1.0, -10)
+	slice_side: 1
+	slice: (0.0, 1.0, 0.0, 0)
+	slice_side: 1
+    slice: (0.0, 0.0, 1.0, 0)
+	slice_side: 2
+    slice: (0.0, 1.0, 0.0, 10)
+	slice_side: 2
+}
+
+object:
+{
+    type: plane
+    center: (-10., 0., 0)
+	direction: (1.0, 0.0, 0.0)
+    color:  (0, 255, 255)
+    specular: 0
+    reflective: 0.
+    transparent: 0
+	slice: (0.0, 0.0, 1.0, -10)
+	slice_side: 1
+	slice: (0.0, 1.0, 0.0, 0)
+	slice_side: 1
+    slice: (0.0, 0.0, 1.0, 0)
+	slice_side: 2
+    slice: (0.0, 1.0, 0.0, 10)
+	slice_side: 2
+}
+
+light:
+{
+	type: p
+	position: (-10, 5, -15)
+	intensities: (0.4, 0.4, 0.4)
+}
+
+light:
+{
+	type: a
+	intensities: (0.4, 0.4, 0.4)
+}

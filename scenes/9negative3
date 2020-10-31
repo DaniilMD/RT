@@ -1,0 +1,70 @@
+camera:
+{
+	viewpoint: (0, 10, -30)
+	camera_angles: (0, 0, 0)
+}
+
+object:
+{
+	type: plane
+	center: (0.0, 0.0, 15.0)
+	direction: (0., 0., 1.)
+	color:  (60, 60, 255)
+	specular: 0
+	reflective: 0.
+	transparent: 0
+}
+
+object:
+{
+	type: plane
+	center: (0.0, -50.0, 0.0)
+	direction: (0., 1., 0.)
+	color:  (150, 150, 155)
+	specular: 0
+	reflective: 0.
+	transparent: 0
+}
+
+object:
+{
+    type: cyl
+    center: (-5., 2., -1.5)
+    radius: 2.
+    direction: (0.5, -0.5, 0.)
+    color:  (255, 0, 255)
+    specular: 500
+    reflective: 0.0
+    transparent: 0.0
+	negative: 1
+}
+
+
+object:
+{
+    type: cyl
+    center: (-5., 2., -1.5)
+    radius: 2.
+    direction: (0.5, 0.5, 0.)
+    color:  (255, 0, 255)
+    specular: 500
+    reflective: 0.0
+    transparent: 0.0
+	negative: 0
+}
+
+
+
+light:
+{
+	type: p
+	position: (-10, 5, -15)
+	intensities: (0.9, 0.9, 0.9)
+}
+
+light/:
+{
+	type: p
+	position: (10, 5, -15)
+	intensities: (0.4, 0.4, 0.4)
+}

@@ -1,0 +1,80 @@
+camera:
+{
+    viewpoint: (40, 10, -25)
+    camera_angles: (-20, -50, 0)
+}
+// Red sphere
+object:
+{
+    type: sphere
+    center: (0., 8., 0.)
+    radius: 10.
+    color:  (255, 0, 0)
+    specular: 500
+    reflective: 0.
+    transparent: 0.
+	negative: 0
+}
+// Green cylinder
+object:
+{
+    type: cyl
+    center: (-20., 10., 3.)
+    direction: (-1.0, 1.0, 0.0)
+	radius: 7.
+    color:  (0, 255, 0)
+    specular: 300
+    reflective: 0.
+    transparent: 0
+}
+// Yellow cone
+object:
+{
+    type: cone
+    center: (7., 15., 0.)
+    direction: (1.0, 1.0, 0.0)
+	alpha: 15
+    color:  (255, 255, 0)
+    specular: 300
+    reflective: 0.
+    transparent: 0
+}
+// Back wall and floor 
+object:
+{
+    type: plane
+    center: (0.0, 0.0, 40.0)
+    direction: (0., 0., -1.)
+    color:  (0, 0, 100)
+    specular: 300
+    reflective: 0.
+    transparent: 0
+}
+object:
+{
+    type: plane
+    center: (0.0, -10.0, 0.0)
+    direction: (0., 1., 0.)
+    color:  (77, 77, 77)
+    specular: 300
+    reflective: 0.
+    transparent: 0
+}
+// 2 random point light sources and ambient light
+light:
+{
+    type: p
+    position: (0, 8, -30)
+    intensities: (0.65, 0.65, 0.65)
+}
+light:
+{
+    type: p
+    position: (20, 20, -20)
+    intensities: (0.3, 0.3, 0.3)
+}
+light:
+{
+    type: a
+    intensities: (0.1, 0.1, 0.1)
+}

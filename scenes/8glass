@@ -1,0 +1,103 @@
+camera:
+{
+	viewpoint: (0, 10, -30)
+	camera_angles: (1, 2, 1)
+}
+
+object:
+{
+	type: plane
+	center: (0.0, 0.0, 5.0)
+	direction: (0., 0., 1.)
+	color:  (60, 60, 255)
+	specular: 0
+	reflective: 0.
+	transparent: 0
+}
+
+object:
+{
+	type: cone
+	center: (0.0, 0.0, 1.0)
+	direction: (0., 1., 0.)
+    alpha: 70
+	color:  (255, 255, 255)
+	specular: 10
+	reflective: 0.
+	transparent: 0.5
+    index_of_refr: 1
+    slice: (0., 1., 0., 1)
+	slice_side: 2
+    slice: (0., 1., 0., 0)
+	slice_side: 1
+
+}
+
+object:
+{
+	type: cyl
+	center: (0.0, 0.0, 1.0)
+	direction: (0., 1., 0.)
+    radius: 0.3
+	color:  (255, 255, 255)
+	specular: 10
+	reflective: 0.
+	transparent: 0.5
+    index_of_refr: 1.1
+    slice: (0., 1., 0., 0.1)
+	slice_side: 2
+    slice: (0., 1., 0., -7.1)
+	slice_side: 1
+
+}
+
+object:
+{
+	type: sphere
+	center: (0.0, 10.0, 1.0)
+	direction: (0., 1., 0.)
+    radius: 3
+	color:  (255, 255, 255)
+	specular: 10
+	reflective: 0.
+	transparent: 0.5
+    index_of_refr: 1
+
+    slice: (0., 1., 0., -10)
+	slice_side: 1
+
+}
+
+object:
+{
+	type: cone
+	center: (0.0, 80.0, 1.0)
+	direction: (0., 1., 0.)
+    alpha: 2.47
+	color:  (255, 255, 255)
+	specular: 10
+	reflective: 0.
+	transparent: 0.5
+    index_of_refr: 1
+    slice: (0., 1., 0., -10)
+	slice_side: 2
+    slice: (0., 1., 0., -20)
+	slice_side: 1
+
+}
+
+light:
+{
+	type: p
+	position: (-10, 5, -15)
+	intensities: (0.4, 0.4, 0.4)
+}
+
+
+
+light:
+{
+	type: p
+	position: (10, 5, -15)
+	intensities: (0.4, 0.4, 0.4)
+}

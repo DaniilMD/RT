@@ -1,0 +1,120 @@
+camera:
+{
+    viewpoint: (0, 0, -100)
+    camera_angles: (0, 0, 0)
+}
+// Opened box
+object:
+{
+    type: plane
+    center: (-50.0, 0.0, 0.0)
+    direction: (1., 0., 0.)
+    color:  (42, 42, 42)
+    specular: 300
+    reflective: 0.
+    transparent: 0
+}
+object:
+{
+    type: plane
+    center: (50.0, 0.0, 0.0)
+    direction: (-1., 0., 0.)
+    color:  (42, 42, 42)
+    specular: 300
+    reflective: 0.
+    transparent: 0
+}
+object:
+{
+    type: plane
+    center: (0.0, -50.0, 0.0)
+    direction: (0., 1., 0.)
+    color:  (42, 42, 42)
+    specular: 300
+    reflective: 0.
+    transparent: 0
+}
+object:
+{
+    type: plane
+    center: (0.0, 50.0, 0.0)
+    direction: (0., 1., 0.)
+    color:  (42, 42, 42)
+    specular: 300
+    reflective: 0.
+    transparent: 0
+}
+object:
+{
+    type: plane
+    center: (0.0, 0.0, 50.0)
+    direction: (0., 0., -1.)
+    color:  (42, 42, 42)
+    specular: 300
+    reflective: 0.
+    transparent: 0
+}
+// Red spheres
+object:
+{
+    type: sphere
+    center: (-50., 50., 50.)
+    radius: 20.
+    color:  (255, 0, 0)
+    specular: 200
+    reflective: 0.
+    transparent: 0.
+	negative: 0
+}
+object:
+{
+    type: sphere
+    center: (50., -50., 50.)
+    radius: 20.
+    color:  (255, 0, 0)
+    specular: 20
+    reflective: 0.
+    transparent: 0.
+	negative: 0
+}
+// Rotated cylinders
+object:
+{
+    type: cyl
+    center: (-50., -50., 50.)
+    direction: (0.0, 0.0, 1.0)
+	radius: 15.
+    color:  (42, 42, 100)
+    specular: 30
+    reflective: 0.
+    transparent: 0
+}
+object:
+{
+    type: cyl
+    center: (50., -50., 50.)
+    direction: (3.0, -4.0, 5.0)
+	radius: 10.
+    color:  (42, 0, 42)
+    specular: 30
+    reflective: 0.
+    transparent: 0
+}
+// 2 random point light sources and ambient light
+light:
+{
+    type: p
+    position: (30, 30, 10)
+    intensities: (0.4, 0.4, 0.4)
+}
+light:
+{
+    type: p
+    position: (-10, 0, -30)
+    intensities: (0.4, 0.4, 0.4)
+}
+light:
+{
+    type: a
+    intensities: (0.2, 0.2, 0.2)
+}

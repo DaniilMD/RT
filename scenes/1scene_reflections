@@ -1,0 +1,147 @@
+camera:
+{
+	viewpoint: (0, 0, -45)
+	camera_angles: (0, 0, 0)
+}
+// Opened box
+object:
+{
+	type: plane
+	center: (-50.0, 0.0, 0.0)
+	direction: (1., 0., 0.)
+	color:  (42, 42, 42)
+	specular: 300
+	reflective: 0.2
+	transparent: 0
+}
+object:
+{
+	type: plane
+	center: (50.0, 0.0, 0.0)
+	direction: (-1., 0., 0.)
+	color:  (42, 42, 42)
+	specular: 300
+	reflective: 0.8
+	transparent: 0
+}
+object:
+{
+	type: plane
+	center: (0.0, -50.0, 0.0)
+	direction: (0., 1., 0.)
+	color:  (42, 42, 42)
+	specular: 300
+	reflective: 0.4
+	transparent: 0
+}
+object:
+{
+	type: plane
+	center: (0.0, 50.0, 0.0)
+	direction: (0., -1., 0.)
+	color:  (42, 42, 42)
+	specular: 300
+	reflective: 0.3
+	transparent: 0
+}
+object:
+{
+	type: plane
+	center: (0.0, 0.0, 50.0)
+	direction: (0., 0., -1.)
+	color:  (42, 42, 42)
+	specular: 300
+	reflective: 0.5
+	transparent: 0
+}
+object:
+{
+	type: plane
+	center: (0.0, 0.0, -50.0)
+	direction: (0., 0., 1.)
+	color:  (42, 42, 42)
+	specular: 300
+	reflective: 0.7
+	transparent: 0
+}
+// Different figures with different reflection indexes
+object:
+{
+	type: sphere
+	center: (-10., 20., 30.)
+	radius: 15.
+	color:  (255, 0, 0)
+	specular: 200
+	reflective: 0.7
+	transparent: 0.
+	negative: 0
+}
+object:
+{
+	type: cyl
+	center: (30., 0., 20.)
+	direction: (0.0, 1.0, 1.0)
+	radius: 15.
+	color:  (42, 42, 100)
+	specular: 30
+	reflective: 0.5
+	transparent: 0
+}
+object:
+{
+	type: cone
+	center: (-40., 30., 10.)
+	direction: (-1.0, 1.0, -0.5)
+	alpha: 25
+	color:  (0, 0, 200)
+	specular: 500
+	reflective: 0.4
+	transparent: 0.
+	negative: 0
+}
+object:
+{
+	type: sphere
+	center: (10., -40., 10.)
+	radius: 15.
+	color:  (255, 0, 0)
+	specular: 200
+	reflective: 0.8
+	transparent: 0.
+	negative: 0
+}
+object:
+{
+	type: sphere
+	center: (-30., -25., -30.)
+	radius: 15.
+	color:  (255, 0, 0)
+	specular: 200
+	reflective: 0.7
+	transparent: 0.
+	negative: 0
+}
+// 2 random point light sources and ambient light
+light:
+{
+	type: p
+	position: (-40, 30, 40)
+	intensities: (0.4, 0.4, 0.4)
+}
+light:
+{
+	type: p
+	position: (20, -20, 30)
+	intensities: (0.4, 0.4, 0.4)
+}
+light:
+{
+	type: p
+	position: (20, 10, -30)
+	intensities: (0.4, 0.4, 0.4)
+}
+light:
+{
+	type: a
+	intensities: (0.2, 0.2, 0.2)
+}
