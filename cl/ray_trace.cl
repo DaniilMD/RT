@@ -1,6 +1,4 @@
-
 #include "cl/ray_trace.h"
-
 
 int			get_closest(t_ray od, t_object *objects, float *dist, t_lim lim)
 {
